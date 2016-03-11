@@ -14,10 +14,10 @@ It is possible to select a category of news on the client side.
 
 ```
 $ curl https://install.meteor.com/ | sh
-$ git clone 
+$ git clone https://github.com/ficshelf/wud-1.git yhoo 
 
-cd yhoo
-meteor 
+$ cd yhoo
+$ meteor 
 
 ```
 
