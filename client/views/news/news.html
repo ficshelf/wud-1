@@ -1,0 +1,29 @@
+<template name="news">
+   <div class="input-field col s12 m12">
+    <select class="getdata">
+      <option value="" disabled selected>Choose your news category</option>
+      <option value="topstories">Top Stories</option>
+      <option value="tech">Technology</option>
+      <option value="sports">Sports</option>
+      <option value="europe">Europe</option>
+      <option value="asia">Asia</option>
+    </select>
+  </div> 
+  <div class="row">
+    {{#each result.query.results.item}}
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">{{title}}</span>
+          </div>
+          <div class="card-content">
+            {{{description}}}
+          </div>
+          <div class="card-action">
+            <a href="{{link}}" target="_blank">Go to Article</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>
